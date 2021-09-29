@@ -6,7 +6,7 @@ import {
     Button,
     Toolbar,
     Dialog,
-    TextField, Alert, Snackbar, FormLabel, Icon, IconButton, Slide
+    TextField, Alert, Snackbar, FormLabel, IconButton, Slide
 } from "@mui/material";
 import "@mui/icons-material"
 import {useAuth} from "../context/AuthContext";
