@@ -1,4 +1,4 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import {auth} from '../firebase'
 
 
@@ -16,11 +16,11 @@ export function AuthProvider({children}) {
         return auth.createUserWithEmailAndPassword(email, password)
     }
 
-    function login(email, password){
+    function login(email, password) {
         return auth.signInWithEmailAndPassword(email, password)
     }
 
-    function logout(){
+    function logout() {
         return auth.signOut()
     }
 

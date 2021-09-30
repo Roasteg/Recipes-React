@@ -1,9 +1,8 @@
 import React from 'react'
 import Appbar from "./Appbar"
-import {createTheme, ThemeProvider, CssBaseline} from "@mui/material"
+import {createTheme, CssBaseline, ThemeProvider} from "@mui/material"
 import {AuthProvider} from "../context/AuthContext"
 import MainPage from "./MainPage"
-import RecipesList from "../api/ApiContext";
 
 const darkTheme = createTheme({
     palette: {
@@ -15,16 +14,12 @@ const darkTheme = createTheme({
 function App() {
     return (
         <AuthProvider>
-                <ThemeProvider theme={darkTheme}>
-                    <CssBaseline/>
-                    <Appbar/>
-                    <MainPage/>
-                </ThemeProvider>
+            <ThemeProvider theme={darkTheme}>
+                <CssBaseline/>
+                <Appbar/>
+                <MainPage/>
+            </ThemeProvider>
         </AuthProvider>
-
-
-
-
 
 
     )

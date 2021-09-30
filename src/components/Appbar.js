@@ -1,25 +1,30 @@
 import React, {useEffect, useRef, useState} from 'react'
 import {
+    Alert,
     AppBar,
-    Typography,
     Box,
     Button,
-    Toolbar,
     Dialog,
-    TextField, Alert, Snackbar, FormLabel, IconButton, Slide
-} from "@mui/material";
+    FormLabel,
+    IconButton,
+    Slide,
+    Snackbar,
+    TextField,
+    Toolbar,
+    Typography
+} from "@mui/material"
 import "@mui/icons-material"
-import {useAuth} from "../context/AuthContext";
-import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
+import {useAuth} from "../context/AuthContext"
+import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined'
 
 
 export default function Appbar() {
-    const [openRegistration, setOpenRegistration] = useState(false);
-    const [openLogin, setOpenLogin] = useState(false);
-    const [error, setError] = useState('');
-    const [loading, setLoading] = useState(false);
-    const [snackOpen, setSnackOpen] = useState(false);
-    const [logged, setLoggedIn] = useState(false);
+    const [openRegistration, setOpenRegistration] = useState(false)
+    const [openLogin, setOpenLogin] = useState(false)
+    const [error, setError] = useState('')
+    const [loading, setLoading] = useState(false)
+    const [snackOpen, setSnackOpen] = useState(false)
+    const [logged, setLoggedIn] = useState(false)
 
     const handleClickRegistration = () => {
         setOpenRegistration(true)
@@ -45,7 +50,7 @@ export default function Appbar() {
             return setLoggedIn(true)
         }
         setLoggedIn(false)
-    }, []);
+    }, [])
 
 
     const emailRef = useRef()
