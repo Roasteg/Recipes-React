@@ -6,6 +6,6 @@ import RecipesList from "../api/ApiContext";
 export default function MainPage() {
 
     return (
-        <RecipesList/>
+        <RecipesList />
     )
 }

@@ -17,7 +17,10 @@ function App() {
             <ThemeProvider theme={darkTheme}>
                 <CssBaseline/>
                 <Appbar/>
-                <MainPage/>
+                <div>
+                    <MainPage/>
+                </div>
+
             </ThemeProvider>
         </AuthProvider>
 

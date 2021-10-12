@@ -8,6 +8,7 @@ export function useAuth() {
     return useContext(AuthContext)
 }
 
+
 export function AuthProvider({children}) {
     const [currentUser, setCurrentUser] = useState()
     const [loading, setLoading] = useState(true)
@@ -39,11 +40,9 @@ export function AuthProvider({children}) {
         login,
         logout
     }
-
     return (
         <AuthContext.Provider value={value}>
             {!loading && children}
         </AuthContext.Provider>
     )
-
 }
