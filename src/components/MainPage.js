@@ -1,6 +1,6 @@
 import React from 'react'
-import "../api/ApiContext";
-import RecipesList from "../api/ApiContext";
+import "../api/ApiResponse";
+import RecipesList from "../api/ApiResponse";
 
 
 export default function MainPage() {
